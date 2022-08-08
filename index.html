@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Nghia Dang Porfolio</title>
+    <title>Nghia Dang Portfolio</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/swiper.min.css">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    
 </head>
 <body>
     <!-- HEADER -->
@@ -157,7 +159,7 @@
 
                             <div>
                                 <h1 class="skills__title">Frontend developer</h1>
-                                <span class="skills__subtitle">Fresher level</span>
+                                <span class="skills__subtitle">Entry level</span>
                             </div>
 
                             <i class="fa fa-chevron-down skills__arrow"></i>
@@ -223,7 +225,7 @@
 
                             <div>
                                 <h1 class="skills__title">Backend developer</h1>
-                                <span class="skills__subtitle">Fresher level</span>
+                                <span class="skills__subtitle">Entry level</span>
                             </div>
 
                             <i class="fa fa-chevron-down skills__arrow"></i>
@@ -269,7 +271,7 @@
 
                             <div>
                                 <h1 class="skills__title">Mobile developer</h1>
-                                <span class="skills__subtitle">Fresher level</span>
+                                <span class="skills__subtitle">Entry level</span>
                             </div>
 
                             <i class="fa fa-chevron-down skills__arrow"></i>
@@ -290,12 +292,252 @@
                 </div>
             </div>
         </section>
+
+        <!-- QUALIFICATION -->
+        <section class="section qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container grid">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="fa fa-graduation-cap qualification__icon"></i> Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class="fa fa-briefcase qualification__icon"></i> Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!-- QUALIFICATION 1 -->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Information Technology</h3>
+                                <span class="qualification__subtitle">HCMC University of Technology and Education</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2018 - 2021
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div></div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Software Technology</h3>
+                                <span class="qualification__subtitle">HCMC University of Technology and Education</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2021 - Now
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- QUALIFICATION 2 -->
+                    <div class="qualification__content" data-content id="work">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">JavaScript Developer</h3>
+                                <span class="qualification__subtitle">Open to work</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    Now
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div></div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section services" id="services">
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What i offer</span>
+
+            <div class="serviecs__container container grid">
+                <!-- SERVICES 1 -->
+                <div class="service__content">
+                    <div>
+                        <i class="fa fa-code services__icon"></i>
+                        <h3 class="services__title">Frontend Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="fa fa-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Frontend Developer</h4>
+                            <i class="fa fa-xmark services__modal-close"></i>
+                        
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="fa fa-circle-check services__modal-icon"></i>
+                                    <p>HTML, CSS</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="fa fa-circle-check services__modal-icon"></i>
+                                    <p>Bootstrap</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="fa fa-circle-check services__modal-icon"></i>
+                                    <p>ES5, ES6</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="fa fa-circle-check services__modal-icon"></i>
+                                    <p>React JS</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SERVICES 2 -->
+                <div class="service__content">
+                    <div>
+                        <i class="fa fa-server services__icon"></i>
+                        <h3 class="services__title">Backend Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="fa fa-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Backend Developer</h4>
+                            <i class="fa fa-xmark services__modal-close"></i>
+
+                            <ul class="services__modal-services">
+                                <li class="services__modal-service">
+                                    <i class="fa fa-circle-check services__modal-icon"></i>
+                                    <p>Node JS</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="fa fa-circle-check services__modal-icon"></i>
+                                    <p>Express JS</p>
+                                </li>
+
+                                <li class="services__modal-service">
+                                    <i class="fa fa-circle-check services__modal-icon"></i>
+                                    <p>MongoDB</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SERVICES 3 -->
+                <div class="service__content">
+                    <div>
+                        <i class="fa fa-mobile services__icon"></i>
+                        <h3 class="services__title">Mobile Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="fa fa-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Mobile Developer</h4>
+                            <i class="fa fa-xmark services__modal-close"></i>
+                            
+                            <ul class="services__modal-services">
+                                <li class="services__modal-service">
+                                    <i class="fa fa-circle-check services__modal-icon"></i>
+                                    <p>React Native</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="section portfolio" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">Most recent work</span>
+
+            <div class="portfolio__container container grid swiper">
+                <div class="swiper-wrapper">
+                    <!-- PORTFOLIO 1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/gooddeal.png" alt="gooddeal-ecomerce-project" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">GOODDEAL Website</h3>
+                            <p class="portfolio__description">E-Commerce Website System Similar to Tiki, Shopee</p>
+                            <a href="https://www.youtube.com/watch?v=g10YjESD9j8" target="_blank" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fa fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PORTFOLIO 2 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/gooddeal.png" alt="gooddeal-ecomerce-app-project" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">GOODDEAL App</h3>
+                            <p class="portfolio__description">E-Commerce Mobile App</p>
+                            <a href="https://www.youtube.com/watch?v=Z-RRAf6UqoA&t=47s" target="_blank" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class="fa fa-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="fa fa-angle-right swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fa fa-angle-left swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
 
     <!-- SCROLL TOP -->
 
+    <!-- SWIPER JS -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="./assets/js/main.js"></script>
