@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="hue-blue">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,7 +53,7 @@
 
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class="fa fa-paper-plane nav__icon"></i> Contact me
+                            <i class="fa fa-paper-plane nav__icon"></i> Contact
                         </a>
                     </li>
                 </ul>
@@ -64,6 +64,9 @@
             <div class="nav__btns">
                 <!-- THEME CHANGE BUTTON -->
                 <i class="fa fa-moon change-theme" id="theme-button"></i>
+
+                <!-- HUE CHANGE BUTTON -->
+                <i class="fa fa-brush change-theme change-theme--hue" id="hue-button"></i>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="fa fa-bars"></i>
@@ -103,7 +106,7 @@
                         <h3 class="home__subtitle">JavaScript developer</h3>
                         <p class="home__description">Experience in web design and full-stack development.</p>
                         <a href="#contact" class="button button--flex">
-                            Contact Me <i class="fa fa-paper-plane nav__icon button__icon"></i>
+                            Contact Me <i class="fa fa-paper-plane button__icon"></i>
                         </a>
                     </div>
                     
@@ -155,147 +158,145 @@
                 <span class="section__subtitle">My technical level</span>
 
                 <div class="skills__container container grid">
-                    <div>
-                        <!-- SKILL 1 -->
-                        <div class="skills__content skills__open">
-                            <div class="skills__header">
-                                <i class="fa fa-code skills__icon"></i>
+                    <!-- SKILL 1 -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class="fa fa-code skills__icon"></i>
 
-                                <div>
-                                    <h1 class="skills__title">Frontend developer</h1>
-                                    <span class="skills__subtitle">Entry level</span>
-                                </div>
-
-                                <i class="fa fa-chevron-down skills__arrow"></i>
+                            <div>
+                                <h1 class="skills__title">Frontend developer</h1>
+                                <span class="skills__subtitle">Entry level</span>
                             </div>
 
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__html"></span>
-                                    </div>
-                                </div>
+                            <i class="fa fa-chevron-down skills__arrow"></i>
+                        </div>
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__number">40%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__css"></span>
-                                    </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">90%</span>
                                 </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Bootstrap</h3>
-                                        <span class="skills__number">75%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__bootstrap"></span>
-                                    </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
                                 </div>
+                            </div>
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__js"></span>
-                                    </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">40%</span>
                                 </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">React JS</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__reactjs"></span>
-                                    </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__bootstrap"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React JS</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__reactjs"></span>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- SKILL 2 -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="fa fa-server skills__icon"></i>
+                    <!-- SKILL 2 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fa fa-server skills__icon"></i>
 
-                                <div>
-                                    <h1 class="skills__title">Backend developer</h1>
-                                    <span class="skills__subtitle">Entry level</span>
-                                </div>
-
-                                <i class="fa fa-chevron-down skills__arrow"></i>
+                            <div>
+                                <h1 class="skills__title">Backend developer</h1>
+                                <span class="skills__subtitle">Entry level</span>
                             </div>
 
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Node JS</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__nodejs"></span>
-                                    </div>
-                                </div>
+                            <i class="fa fa-chevron-down skills__arrow"></i>
+                        </div>
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">Express JS</h3>
-                                        <span class="skills__number">40%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__expressjs"></span>
-                                    </div>
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Node JS</h3>
+                                    <span class="skills__number">60%</span>
                                 </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__nodejs"></span>
+                                </div>
+                            </div>
 
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">MongoDB</h3>
-                                        <span class="skills__number">75%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__mongodb"></span>
-                                    </div>
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Express JS</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__expressjs"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MongoDB</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__mongodb"></span>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- SKILL 3 -->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="fa fa-mobile skills__icon"></i>
+                    <!-- SKILL 3 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="fa fa-mobile skills__icon"></i>
 
-                                <div>
-                                    <h1 class="skills__title">Mobile developer</h1>
-                                    <span class="skills__subtitle">Entry level</span>
-                                </div>
-
-                                <i class="fa fa-chevron-down skills__arrow"></i>
+                            <div>
+                                <h1 class="skills__title">Mobile developer</h1>
+                                <span class="skills__subtitle">Entry level</span>
                             </div>
 
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">React Native</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentage skills__reactnative"></span>
-                                    </div>
+                            <i class="fa fa-chevron-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React Native</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__reactnative"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            
+            </section>
 
             <!-- QUALIFICATION -->
             <section class="section qualification">
@@ -384,12 +385,12 @@
             <h2 class="section__title">Services</h2>
             <span class="section__subtitle">What i offer</span>
 
-            <div class="serviecs__container container grid">
+            <div class="services__container container grid">
                 <!-- SERVICES 1 -->
-                <div class="service__content">
+                <div class="services__content">
                     <div>
                         <i class="fa fa-code services__icon"></i>
-                        <h3 class="services__title">Frontend Developer</h3>
+                        <h3 class="services__title">Frontend <br> Developer</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">
@@ -399,7 +400,7 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Frontend Developer</h4>
+                            <h4 class="services__modal-title">Frontend  Developer</h4>
                             <i class="fa fa-xmark services__modal-close"></i>
                         
                             <ul class="services__modal-services grid">
@@ -428,10 +429,10 @@
                 </div>
 
                 <!-- SERVICES 2 -->
-                <div class="service__content">
+                <div class="services__content">
                     <div>
                         <i class="fa fa-server services__icon"></i>
-                        <h3 class="services__title">Backend Developer</h3>
+                        <h3 class="services__title">Backend <br> Developer</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">
@@ -465,10 +466,10 @@
                 </div>
 
                 <!-- SERVICES 3 -->
-                <div class="service__content">
+                <div class="services__content">
                     <div>
                         <i class="fa fa-mobile services__icon"></i>
-                        <h3 class="services__title">Mobile Developer</h3>
+                        <h3 class="services__title">Mobile <br> Developer</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">
@@ -568,18 +569,18 @@
                                 <div class="testimonial__header">
                                     <img src="./assets/img/testimonial_1.png" alt="testimonial-1" class="testimanial__img">
                                     <div>
-                                        <h3 class="testimonial__name">Violet</h3>
+                                        <h3 class="testimonial__name">My Friend 1</h3>
                                         <span class="testimonial__client">Partner</span>
                                     </div>
                                 </div>
 
-                                <div>
+                                <!-- <div>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
-                                </div>
+                                </div> -->
                             </div>
 
                             <p class="testimonial__description">
@@ -593,18 +594,18 @@
                                 <div class="testimonial__header">
                                     <img src="./assets/img/testimonial_2.png" alt="testimonial-2" class="testimanial__img">
                                     <div>
-                                        <h3 class="testimonial__name">Caitlyn</h3>
+                                        <h3 class="testimonial__name">My Friend 2</h3>
                                         <span class="testimonial__client">Partner</span>
                                     </div>
                                 </div>
 
-                                <div>
+                                <!-- <div>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
-                                </div>
+                                </div> -->
                             </div>
 
                             <p class="testimonial__description">
@@ -618,18 +619,18 @@
                                 <div class="testimonial__header">
                                     <img src="./assets/img/testimonial_3.png" alt="testimonial-3" class="testimanial__img">
                                     <div>
-                                        <h3 class="testimonial__name">Jayce</h3>
+                                        <h3 class="testimonial__name">My Friend 3</h3>
                                         <span class="testimonial__client">Partner</span>
                                     </div>
                                 </div>
 
-                                <div>
+                                <!-- <div>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
                                     <i class="fa fa-star testimonial__icon-star"></i>
-                                </div>
+                                </div> -->
                             </div>
 
                             <p class="testimonial__description">
@@ -701,7 +702,7 @@
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <a href="#contact" class="button button--flex">
                             Send Message
                             <i class="fa fa-paper-plane button__icon"></i>
                         </a>
@@ -709,54 +710,50 @@
                 </form>
             </div>
         </section>
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Nghĩa Đặng</h1>
-                        <span class="footer__subtitle">JavaScript developer</span>
-                    </div>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#services" class="footer__link">Serices</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="footer__link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contact me</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer__socials">
-                        <a href="https://www.linkedin.com/in/nghia-dang-bb8540247/" target="_blank" class="footer__social">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/langde666" target="_blank" class="footer__social">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.facebook.com/nghiadang666" target="_blank" class="footer__social">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <p class="footer__copy">&#169; Langde666. All right reserved</p>
-            </div>
-        </footer>
-
-        <!-- SCROLL TOP -->
-        <a href="#" class="scroll-up" id="scroll-up">
-            <i class="fa fa-arrow-up scroll-up__icon"></i>
-        </a>
     </main>
 
     <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Nghĩa Đặng</h1>
+                    <span class="footer__subtitle">JavaScript developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Serices</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/nghia-dang-bb8540247/" target="_blank" class="footer__social">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/langde666" target="_blank" class="footer__social">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/nghiadang666" target="_blank" class="footer__social">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Langde666. All right reserved</p>
+        </div>
+    </footer>
 
     <!-- SCROLL TOP -->
+    <a href="#" class="scroll-up" id="scroll-up">
+        <i class="fa fa-arrow-up scroll-up__icon"></i>
+    </a>
 
     <!-- SWIPER JS -->
     <script src="./assets/js/swiper-bundle.min.js"></script>

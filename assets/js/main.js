@@ -159,26 +159,65 @@ const themeBtn = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
 const iconTheme = 'fa-sun';
 
-// Previously selected
+// Handle previously selected theme
 const selectedTheme = localStorage.getItem('selectedTheme');
 const selectedIcon = localStorage.getItem('selectedIcon');
 
-// Get current theme
-const currentTheme = document.body.classList.contains(darkTheme) ? 'dark' : 'light';
-const currentIcon = themeBtn.classList.contains(iconTheme) ? 'fa-moon' : 'fa-sun';
-
-// Handle previously selected etheme
 if (selectedTheme) {
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-    themeBtn.classList[selectedIcon === 'fa-moon' ?  'add' : 'remove'](iconTheme);
+    if (selectedTheme === 'dark') {
+        document.body.classList.add(darkTheme);
+        themeBtn.classList.add(iconTheme);
+    }
+    else {
+        document.body.classList.remove(darkTheme);
+        themeBtn.classList.remove(iconTheme);
+    }
 }
 
 // Theme Button
 themeBtn.addEventListener('click', () => {
+    const currentTheme = document.body.classList.contains(darkTheme) ? 'light' : 'dark';
+    const currentIcon = themeBtn.classList.contains(iconTheme) ? 'fa-sun' : 'fa-moon';
+
     document.body.classList.toggle(darkTheme);
     themeBtn.classList.toggle(iconTheme);
 
     // Save to localStorage
     localStorage.setItem('selectedTheme', currentTheme);
     localStorage.setItem('selectedIcon', currentIcon);
-})
+});
+
+// HUE THEME
+const hueBtn = document.getElementById('hue-button');
+const hueThemeList = ['hue-blue', 'hue-purple', 'hue-green', 'hue-pink'];
+let hueTheme = hueThemeList[0];
+
+// Handle previously selected hue
+const selectedHue = localStorage.getItem('selectedHue');
+
+if (selectedHue) {
+    document.documentElement.classList.remove(hueTheme);
+    document.documentElement.classList.add(selectedHue);
+}
+// Hue Button
+hueBtn.addEventListener('click', () => {
+    let currentHue = hueThemeList[1];
+    for (let i=0; i<hueThemeList.length; i++) {
+        if (document.documentElement.classList.contains(hueThemeList[i])) {
+            hueTheme = hueThemeList[i];
+            if (i<hueThemeList.length-1) {
+                currentHue = hueThemeList[i+1];
+            }
+            else {
+                currentHue = hueThemeList[0];
+            }
+            break;
+        }
+    }
+
+    document.documentElement.classList.remove(hueTheme);
+    document.documentElement.classList.add(currentHue);
+
+    // Save to localStorage
+    localStorage.setItem('selectedHue', currentHue);
+});
