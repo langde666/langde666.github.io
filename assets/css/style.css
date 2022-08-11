@@ -1,11 +1,6 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@400;500;600&display=swap');
 
-
-
-
-
-
 /* VARIABLES */
 :root {
     --header-height: 3rem;
@@ -785,6 +780,8 @@ img {
 
 .portfolio__img {
     width: 256px;
+    max-height: 256px;
+    object-fit: cover;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -1281,6 +1278,8 @@ img {
 
     .portfolio__img {
         width: 320px;
+        max-height: 320px;
+        object-fit: cover;
         margin-bottom: 0;
     }
 
