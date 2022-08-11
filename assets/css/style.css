@@ -780,8 +780,9 @@ img {
 
 .portfolio__img {
     width: 256px;
-    max-height: 256px;
+    max-height: 208px;
     object-fit: cover;
+    object-position: top;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -1278,8 +1279,9 @@ img {
 
     .portfolio__img {
         width: 320px;
-        max-height: 320px;
+        max-height: 260px;
         object-fit: cover;
+        object-position: top;
         margin-bottom: 0;
     }
 
