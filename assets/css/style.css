@@ -549,19 +549,19 @@ img {
 }
 
 .skills__bootstrap {
-    width: 75%;
+    width: 60%;
 }
 
 .skills__js {
-    width: 60%;
+    width: 50%;
 }
 
 .skills__reactjs {
-    width: 60%;
+    width: 50%;
 }
 
 .skills__nodejs {
-    width: 60%;
+    width: 50%;
 }
 
 .skills__expressjs {
@@ -569,11 +569,11 @@ img {
 }
 
 .skills__mongodb {
-    width: 75%;
+    width: 60%;
 }
 
 .skills__reactnative {
-    width: 60%;
+    width: 50%;
 }
 
 .skills__open .skills__list {
