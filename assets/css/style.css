@@ -375,8 +375,15 @@ img {
     fill: var(--first-color);
 }   
 
-.home__blob-img {
+/* .home__blob-img {
     width: 120px;
+} */
+.home__blob-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 30% 70% 70% 30% / 30% 37% 63% 70% ;
+    border: .25rem solid var(--first-color);
 }
 
 .home__data,
@@ -867,6 +874,7 @@ img {
     right: 0;
     width: 232px;
     justify-self: center;
+    border-top-left-radius: 1rem;
 }
 
 /* TESTIMONIAL */
